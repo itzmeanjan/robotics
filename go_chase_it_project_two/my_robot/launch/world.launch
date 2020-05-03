@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+	<arg name="x" default="2.97" />
+	<arg name="y" default="-1.8" />
+	<arg name="z" default="0.1" />
+	<arg name="R" default="0" />
+	<arg name="P" default="0" />
+	<arg name="Y" default="1.57" />
+
+	<include file="$(find my_robot)/launch/robot_description.launch" />
+
+	<arg name="world_file" default="$(find my_robot)/worlds/anjan_roy.world" />
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="use_sim_time" value="true" />
+		<arg name="debug" value="false" />
+		<arg name="gui" value="true" />
+		<arg name="world_name" value="$(arg world_file)" />
+	</include>
+
+	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" args="-urdf -param robot_description -model my_robot -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)" />
+
+	<!-- For starting rviz node, uncomment line below -->
+	<!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false" /> -->
+
+</launch>
