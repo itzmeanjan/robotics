@@ -1,6 +1,6 @@
 # Go Chase It
 
-![robot_inside_world_1.png](../demo/robot_inside_world_1.png)
+![robot_inside_world_1](../demo/robot_inside_world_1.png)
 
 
 - We're going to design a two wheeled humanoid robot with one Camera & LiDaR sensor, which will be placed inside world designed in previous [project](./gazebo_project_one.md).
@@ -61,5 +61,8 @@ $ roslaunch rqt_image_view rqt_image_view
 ```
 
 - Try changing ball position in world & have fun.
+
+
+![humanoid_robot](../demo/humanoid_robot.png)
 
 Thanking you :blush:

@@ -2,7 +2,7 @@
 
 Robotics is :heart:
 
-![humanoid_robot](./demo/humanoid_robot.png)
+![go_chase_it](demo/go_chase_it.gif)
 
 ## motivation
 
@@ -12,7 +12,7 @@ Learning a lot of new stuff, so I decided to share all projects that I'm going t
 
 ## work
 
-![robot_inside_world_2.png](./demo/robot_inside_world_2.png)
+![robot_inside_world_2](./demo/robot_inside_world_2.png)
 
 ### platform requirement
 
