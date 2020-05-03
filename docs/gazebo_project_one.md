@@ -1,6 +1,6 @@
 # Build My World
 
-![my_world](../screenshots/gazebo_project_one_ss.jpg)
+![my_world](../demo/gazebo_project_one_ss.jpg)
 
 
 - Here we're going to design one building using Building Editor tool in Gazebo.
